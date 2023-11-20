@@ -73,5 +73,6 @@ class CommentsController
         $commentModel = new Comment();
         $commentModel->create($_POST);
         unset($_POST);
+        header("Location: index.php" );
     }
 }
